@@ -1,0 +1,39 @@
+:root {
+  --primary-color: #063547;
+  --secondary-color: #44b89d;
+}
+a {
+  text-decoration: none;
+}
+.full-section-height {
+  min-height: calc(100vh - 130px);
+  display: flex;
+  align-items: center;
+}
+.form-control:not(textarea) {
+  border-radius: 25px;
+  height: 48px;
+}
+.form-control:focus {
+  box-shadow: none !important;
+}
+.btn-primary {
+  border-radius: 25px;
+  height: 48px;
+  background-color: var(--secondary-color) !important;
+  border: 1px solid var(--secondary-color) !important;
+  min-width: 175px;
+}
+.btn-primary:hover {
+  background-color: #fff !important;
+  color: var(--secondary-color) !important;
+  transition: all 0.3s ease;
+}
+.page-link {
+  color: var(--primary-color);
+}
+.page-link,
+.page-link.active {
+  background-color: var(--secondary-color) !important;
+  border-color: #fff !important;
+}
